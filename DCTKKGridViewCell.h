@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Daniel Tull Limited. All rights reserved.
 //
 
-#import <KKGridView/KKGridViewCell.h>
+#import <KKGridView/KKGridView.h>
 #import "DCTKKGridViewDataSources.h"
 
 @protocol DCTKKGridViewCellObjectConfiguration <NSObject>

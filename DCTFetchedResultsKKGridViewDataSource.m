@@ -1,4 +1,3 @@
-
 //
 //  KKGridViewDataSource.m
 //  Convene
@@ -8,7 +7,6 @@
 //
 
 #import "DCTFetchedResultsKKGridViewDataSource.h"
-#import "GridViewCell.h"
 
 @interface DCTFetchedResultsKKGridViewDataSource () <NSFetchedResultsControllerDelegate>
 @end
