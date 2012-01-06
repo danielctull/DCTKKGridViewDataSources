@@ -11,7 +11,7 @@
 
 @class DCTKKParentGridViewDataSource;
 
-@interface DCTKKGridViewDataSource : NSObject
+@interface DCTKKGridViewDataSource : NSObject <KKGridViewDataSource>
 
 @property (nonatomic, assign) Class cellClass;
 @property (nonatomic, strong) IBOutlet KKGridView *gridView;
