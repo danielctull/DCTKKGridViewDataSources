@@ -12,8 +12,8 @@
 
 /// @name Conversion
 
-- (NSInteger)convertSection:(NSInteger)section fromChildKKGridViewDataSource:(DCTKKGridViewDataSource *)dataSource;
-- (NSInteger)convertSection:(NSInteger)section toChildKKGridViewDataSource:(DCTKKGridViewDataSource *)dataSource;
+- (NSUInteger)convertSection:(NSUInteger)section fromChildKKGridViewDataSource:(DCTKKGridViewDataSource *)dataSource;
+- (NSUInteger)convertSection:(NSUInteger)section toChildKKGridViewDataSource:(DCTKKGridViewDataSource *)dataSource;
 
 - (KKIndexPath *)convertIndexPath:(KKIndexPath *)indexPath fromChildKKGridViewDataSource:(DCTKKGridViewDataSource *)dataSource;
 - (KKIndexPath *)convertIndexPath:(KKIndexPath *)indexPath toChildKKGridViewDataSource:(DCTKKGridViewDataSource *)dataSource;
@@ -21,7 +21,7 @@
 /// @name Retrieving child data sources
 
 @property (nonatomic, readonly) NSArray *childKKGridViewDataSources;
-- (DCTKKGridViewDataSource *)childKKGridViewDataSourceForSection:(NSInteger)section;
+- (DCTKKGridViewDataSource *)childKKGridViewDataSourceForSection:(NSUInteger)section;
 - (DCTKKGridViewDataSource *)childKKGridViewDataSourceForIndexPath:(KKIndexPath *)indexPath;
 
 /// @name Parental guidance

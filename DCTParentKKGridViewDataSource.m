@@ -56,17 +56,17 @@
 	return indexPath;
 }
 
-- (NSInteger)convertSection:(NSInteger)section fromChildKKGridViewDataSource:(DCTKKGridViewDataSource *)dataSource {
+- (NSUInteger)convertSection:(NSUInteger)section fromChildKKGridViewDataSource:(DCTKKGridViewDataSource *)dataSource {
 	NSAssert([self.childKKGridViewDataSources containsObject:dataSource], @"dataSource should be in the childTableViewDataSources");
 	return section;
 }
 
-- (NSInteger)convertSection:(NSInteger)section toChildKKGridViewDataSource:(DCTKKGridViewDataSource *)dataSource {
+- (NSUInteger)convertSection:(NSUInteger)section toChildKKGridViewDataSource:(DCTKKGridViewDataSource *)dataSource {
 	NSAssert([self.childKKGridViewDataSources containsObject:dataSource], @"dataSource should be in the childTableViewDataSources");
 	return section;
 }
 
-- (DCTKKGridViewDataSource *)childKKGridViewDataSourceForSection:(NSInteger)section {
+- (DCTKKGridViewDataSource *)childKKGridViewDataSourceForSection:(NSUInteger)section {
 	return [self.childKKGridViewDataSources lastObject];
 }
 
