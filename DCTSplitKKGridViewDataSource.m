@@ -206,9 +206,13 @@
 
 #pragma mark - KKGridViewDataSource methods
 
-- (NSUInteger)numberOfSectionsInGridView:(KKGridView *)gv {
+- (NSUInteger)numberOfSectionsInGridView:(KKGridView *)gv {	
 	gridViewHasSetup = YES;
 	self.gridView = gv;
+	
+	if (self.type == DCTSplitKKGridViewDataSourceTypeIndex)
+		return 1;
+	
 	return [[self dctInternal_gridViewDataSources] count];
 }
 
@@ -218,13 +222,15 @@
 		return [super gridView:gv numberOfItemsInSection:section];
 	
 	
-	__block NSInteger numberOfRows = 0;
+	__block NSUInteger numberOfItems = 0;
 	
 	[[self dctInternal_gridViewDataSources] enumerateObjectsUsingBlock:^(DCTKKGridViewDataSource *ds, NSUInteger idx, BOOL *stop) {
-		numberOfRows += [ds gridView:self.gridView numberOfItemsInSection:0];
+		numberOfItems += [ds gridView:self.gridView numberOfItemsInSection:0];
 	}];
 	
-	return numberOfRows;
+	NSLog(@"%@:%@ %i", self, NSStringFromSelector(_cmd), numberOfItems);
+	
+	return numberOfItems;
 }
 
 #pragma mark - Internal methods
