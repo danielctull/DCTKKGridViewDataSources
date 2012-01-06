@@ -9,13 +9,13 @@
 #import <KKGridView/KKGridView.h>
 #import "DCTKKGridViewDataSources.h"
 
-@class DCTKKParentGridViewDataSource;
+@class DCTParentKKGridViewDataSource;
 
 @interface DCTKKGridViewDataSource : NSObject <KKGridViewDataSource>
 
 @property (nonatomic, assign) Class cellClass;
 @property (nonatomic, strong) IBOutlet KKGridView *gridView;
-@property (nonatomic, dct_weak) DCTKKParentGridViewDataSource *parent;
+@property (nonatomic, dct_weak) DCTParentKKGridViewDataSource *parent;
 
 /** A convinient way to repload the cells of the data source, this 
  should be overridden by subclasses to provide desired results.
