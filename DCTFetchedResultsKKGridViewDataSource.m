@@ -7,6 +7,8 @@
 //
 
 #import "DCTFetchedResultsKKGridViewDataSource.h"
+#import "DCTParentKKGridViewDataSource.h"
+#import "KKGridView+DCTKKGridViewDataSources.h"
 
 @interface DCTFetchedResultsKKGridViewDataSource () <NSFetchedResultsControllerDelegate>
 @end
@@ -76,31 +78,40 @@
 
 - (void)controller:(NSFetchedResultsController *)controller 
    didChangeObject:(id)anObject
-	   atIndexPath:(NSIndexPath *)indexPath
+	   atIndexPath:(NSIndexPath *)nsIndexPath
 	 forChangeType:(NSFetchedResultsChangeType)type
-	  newIndexPath:(NSIndexPath *)newIndexPath {
+	  newIndexPath:(NSIndexPath *)newNSIndexPath {
+	
+	if (self.parent != nil && ![self.parent childKKGridViewDataSourceShouldUpdateCells:self])
+		return;
+	
+	KKIndexPath *indexPath = [KKIndexPath indexPathWithNSIndexPath:nsIndexPath];
+	KKIndexPath *newIndexPath = [KKIndexPath indexPathWithNSIndexPath:newNSIndexPath];
+	
+	indexPath = [self.gridView dct_convertIndexPath:indexPath fromChildKKGridViewDataSource:self];
+	newIndexPath = [self.gridView dct_convertIndexPath:newIndexPath fromChildKKGridViewDataSource:self];
+	
 	
     KKGridView *gv = self.gridView;
 	
     switch(type) {
 			
         case NSFetchedResultsChangeInsert:
-            [gv insertItemsAtIndexPaths:[NSArray arrayWithObject:[KKIndexPath indexPathWithNSIndexPath:indexPath]]
+            [gv insertItemsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
 						  withAnimation:KKGridViewAnimationFade];
             break;
 			
         case NSFetchedResultsChangeDelete:
-			[gv deleteItemsAtIndexPaths:[NSArray arrayWithObject:[KKIndexPath indexPathWithNSIndexPath:indexPath]]
+			[gv deleteItemsAtIndexPaths:[NSArray arrayWithObject:indexPath]
 						  withAnimation:KKGridViewAnimationFade];
             break;
 			
         case NSFetchedResultsChangeUpdate:
-			[gv reloadItemsAtIndexPaths:[NSArray arrayWithObject:[KKIndexPath indexPathWithNSIndexPath:indexPath]]];
+			[gv reloadItemsAtIndexPaths:[NSArray arrayWithObject:indexPath]];
             break;
 			
         case NSFetchedResultsChangeMove:
-			[gv moveItemAtIndexPath:[KKIndexPath indexPathWithNSIndexPath:indexPath]
-						toIndexPath:[KKIndexPath indexPathWithNSIndexPath:newIndexPath]];
+			[gv moveItemAtIndexPath:indexPath toIndexPath:newIndexPath];
             break;
     }
 }

@@ -77,12 +77,12 @@
 	
 	if (self.type == DCTSplitKKGridViewDataSourceTypeIndex) {
 		
-		__block NSInteger totalRows = 0;
+		__block NSUInteger totalRows = 0;
 		NSUInteger index = indexPath.index;
 		
 		[[self dctInternal_gridViewDataSources] enumerateObjectsUsingBlock:^(DCTKKGridViewDataSource *ds, NSUInteger idx, BOOL *stop) {
 			
-			NSInteger numberOfRows = [ds gridView:self.gridView numberOfItemsInSection:0];
+			NSUInteger numberOfRows = [ds gridView:self.gridView numberOfItemsInSection:0];
 			
 			if ((totalRows + numberOfRows) > index)
 				*stop = YES;
@@ -227,8 +227,6 @@
 	[[self dctInternal_gridViewDataSources] enumerateObjectsUsingBlock:^(DCTKKGridViewDataSource *ds, NSUInteger idx, BOOL *stop) {
 		numberOfItems += [ds gridView:self.gridView numberOfItemsInSection:0];
 	}];
-	
-	NSLog(@"%@:%@ %i", self, NSStringFromSelector(_cmd), numberOfItems);
 	
 	return numberOfItems;
 }
