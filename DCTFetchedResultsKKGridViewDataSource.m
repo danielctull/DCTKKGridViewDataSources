@@ -111,7 +111,10 @@
             break;
 			
         case NSFetchedResultsChangeMove:
-			[gv moveItemAtIndexPath:indexPath toIndexPath:newIndexPath];
+			[gv deleteItemsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+						  withAnimation:KKGridViewAnimationFade];
+			[gv insertItemsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
+						  withAnimation:KKGridViewAnimationFade];
             break;
     }
 }
