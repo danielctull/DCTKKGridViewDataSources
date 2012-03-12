@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Daniel Tull Limited. All rights reserved.
 //
 
+#import <CoreData/CoreData.h>
 #import "DCTKKGridViewDataSource.h"
 
 @interface DCTFetchedResultsKKGridViewDataSource : DCTKKGridViewDataSource
