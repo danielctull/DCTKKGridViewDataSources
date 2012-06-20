@@ -7,7 +7,6 @@
 //
 
 #import <KKGridView/KKGridView.h>
-#import "DCTKKGridViewDataSources.h"
 
 @class DCTParentKKGridViewDataSource;
 

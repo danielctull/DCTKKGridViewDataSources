@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24E253131592159B00125705 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E253121592159B00125705 /* Foundation.framework */; };
+		24E253181592159B00125705 /* DCTKKGridViewDataSources.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24E253171592159B00125705 /* DCTKKGridViewDataSources.h */; };
+		24E253221592159B00125705 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E253211592159B00125705 /* SenTestingKit.framework */; };
+		24E253241592159B00125705 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E253231592159B00125705 /* UIKit.framework */; };
+		24E253251592159B00125705 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E253121592159B00125705 /* Foundation.framework */; };
+		24E253281592159B00125705 /* libDCTKKGridViewDataSources.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2530F1592159B00125705 /* libDCTKKGridViewDataSources.a */; };
+		24E2532E1592159B00125705 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24E2532C1592159B00125705 /* InfoPlist.strings */; };
+		24E253311592159B00125705 /* DCTKKGridViewDataSourcesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E253301592159B00125705 /* DCTKKGridViewDataSourcesTests.m */; };
+		24E2534A1592166000125705 /* DCTArrayKKGridViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E2533B1592166000125705 /* DCTArrayKKGridViewDataSource.m */; };
+		24E2534B1592166000125705 /* DCTFetchedResultsKKGridViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E2533D1592166000125705 /* DCTFetchedResultsKKGridViewDataSource.m */; };
+		24E2534C1592166000125705 /* DCTKKGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E2533F1592166000125705 /* DCTKKGridViewCell.m */; };
+		24E2534D1592166000125705 /* DCTKKGridViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E253411592166000125705 /* DCTKKGridViewDataSource.m */; };
+		24E2534E1592166000125705 /* DCTObjectKKGridViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E253431592166000125705 /* DCTObjectKKGridViewDataSource.m */; };
+		24E2534F1592166000125705 /* DCTParentKKGridViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E253451592166000125705 /* DCTParentKKGridViewDataSource.m */; };
+		24E253501592166000125705 /* DCTSplitKKGridViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E253471592166000125705 /* DCTSplitKKGridViewDataSource.m */; };
+		24E253511592166000125705 /* KKGridView+DCTKKGridViewDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E253491592166000125705 /* KKGridView+DCTKKGridViewDataSources.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24E253261592159B00125705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24E253061592159B00125705 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24E2530E1592159B00125705;
+			remoteInfo = DCTKKGridViewDataSources;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		24E2530D1592159B00125705 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				24E253181592159B00125705 /* DCTKKGridViewDataSources.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		24E2530F1592159B00125705 /* libDCTKKGridViewDataSources.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCTKKGridViewDataSources.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E253121592159B00125705 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		24E253171592159B00125705 /* DCTKKGridViewDataSources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTKKGridViewDataSources.h; sourceTree = "<group>"; };
+		24E253201592159B00125705 /* DCTKKGridViewDataSourcesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCTKKGridViewDataSourcesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E253211592159B00125705 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		24E253231592159B00125705 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		24E2532B1592159B00125705 /* DCTKKGridViewDataSourcesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCTKKGridViewDataSourcesTests-Info.plist"; sourceTree = "<group>"; };
+		24E2532D1592159B00125705 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		24E2532F1592159B00125705 /* DCTKKGridViewDataSourcesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTKKGridViewDataSourcesTests.h; sourceTree = "<group>"; };
+		24E253301592159B00125705 /* DCTKKGridViewDataSourcesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCTKKGridViewDataSourcesTests.m; sourceTree = "<group>"; };
+		24E2533A1592166000125705 /* DCTArrayKKGridViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTArrayKKGridViewDataSource.h; sourceTree = "<group>"; };
+		24E2533B1592166000125705 /* DCTArrayKKGridViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTArrayKKGridViewDataSource.m; sourceTree = "<group>"; };
+		24E2533C1592166000125705 /* DCTFetchedResultsKKGridViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFetchedResultsKKGridViewDataSource.h; sourceTree = "<group>"; };
+		24E2533D1592166000125705 /* DCTFetchedResultsKKGridViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTFetchedResultsKKGridViewDataSource.m; sourceTree = "<group>"; };
+		24E2533E1592166000125705 /* DCTKKGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTKKGridViewCell.h; sourceTree = "<group>"; };
+		24E2533F1592166000125705 /* DCTKKGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTKKGridViewCell.m; sourceTree = "<group>"; };
+		24E253401592166000125705 /* DCTKKGridViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTKKGridViewDataSource.h; sourceTree = "<group>"; };
+		24E253411592166000125705 /* DCTKKGridViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTKKGridViewDataSource.m; sourceTree = "<group>"; };
+		24E253421592166000125705 /* DCTObjectKKGridViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTObjectKKGridViewDataSource.h; sourceTree = "<group>"; };
+		24E253431592166000125705 /* DCTObjectKKGridViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTObjectKKGridViewDataSource.m; sourceTree = "<group>"; };
+		24E253441592166000125705 /* DCTParentKKGridViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTParentKKGridViewDataSource.h; sourceTree = "<group>"; };
+		24E253451592166000125705 /* DCTParentKKGridViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTParentKKGridViewDataSource.m; sourceTree = "<group>"; };
+		24E253461592166000125705 /* DCTSplitKKGridViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTSplitKKGridViewDataSource.h; sourceTree = "<group>"; };
+		24E253471592166000125705 /* DCTSplitKKGridViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTSplitKKGridViewDataSource.m; sourceTree = "<group>"; };
+		24E253481592166000125705 /* KKGridView+DCTKKGridViewDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KKGridView+DCTKKGridViewDataSources.h"; sourceTree = "<group>"; };
+		24E253491592166000125705 /* KKGridView+DCTKKGridViewDataSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KKGridView+DCTKKGridViewDataSources.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24E2530C1592159B00125705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E253131592159B00125705 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24E2531C1592159B00125705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E253221592159B00125705 /* SenTestingKit.framework in Frameworks */,
+				24E253241592159B00125705 /* UIKit.framework in Frameworks */,
+				24E253251592159B00125705 /* Foundation.framework in Frameworks */,
+				24E253281592159B00125705 /* libDCTKKGridViewDataSources.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24E253041592159B00125705 = {
+			isa = PBXGroup;
+			children = (
+				24E253141592159B00125705 /* DCTKKGridViewDataSources */,
+				24E253291592159B00125705 /* DCTKKGridViewDataSourcesTests */,
+				24E253111592159B00125705 /* Frameworks */,
+				24E253101592159B00125705 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24E253101592159B00125705 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24E2530F1592159B00125705 /* libDCTKKGridViewDataSources.a */,
+				24E253201592159B00125705 /* DCTKKGridViewDataSourcesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24E253111592159B00125705 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24E253121592159B00125705 /* Foundation.framework */,
+				24E253211592159B00125705 /* SenTestingKit.framework */,
+				24E253231592159B00125705 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24E253141592159B00125705 /* DCTKKGridViewDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				24E253171592159B00125705 /* DCTKKGridViewDataSources.h */,
+				24E2533A1592166000125705 /* DCTArrayKKGridViewDataSource.h */,
+				24E2533B1592166000125705 /* DCTArrayKKGridViewDataSource.m */,
+				24E2533C1592166000125705 /* DCTFetchedResultsKKGridViewDataSource.h */,
+				24E2533D1592166000125705 /* DCTFetchedResultsKKGridViewDataSource.m */,
+				24E2533E1592166000125705 /* DCTKKGridViewCell.h */,
+				24E2533F1592166000125705 /* DCTKKGridViewCell.m */,
+				24E253401592166000125705 /* DCTKKGridViewDataSource.h */,
+				24E253411592166000125705 /* DCTKKGridViewDataSource.m */,
+				24E253421592166000125705 /* DCTObjectKKGridViewDataSource.h */,
+				24E253431592166000125705 /* DCTObjectKKGridViewDataSource.m */,
+				24E253441592166000125705 /* DCTParentKKGridViewDataSource.h */,
+				24E253451592166000125705 /* DCTParentKKGridViewDataSource.m */,
+				24E253461592166000125705 /* DCTSplitKKGridViewDataSource.h */,
+				24E253471592166000125705 /* DCTSplitKKGridViewDataSource.m */,
+				24E253481592166000125705 /* KKGridView+DCTKKGridViewDataSources.h */,
+				24E253491592166000125705 /* KKGridView+DCTKKGridViewDataSources.m */,
+			);
+			path = DCTKKGridViewDataSources;
+			sourceTree = "<group>";
+		};
+		24E253291592159B00125705 /* DCTKKGridViewDataSourcesTests */ = {
+			isa = PBXGroup;
+			children = (
+				24E2532F1592159B00125705 /* DCTKKGridViewDataSourcesTests.h */,
+				24E253301592159B00125705 /* DCTKKGridViewDataSourcesTests.m */,
+				24E2532A1592159B00125705 /* Supporting Files */,
+			);
+			path = DCTKKGridViewDataSourcesTests;
+			sourceTree = "<group>";
+		};
+		24E2532A1592159B00125705 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24E2532B1592159B00125705 /* DCTKKGridViewDataSourcesTests-Info.plist */,
+				24E2532C1592159B00125705 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24E2530E1592159B00125705 /* DCTKKGridViewDataSources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E253341592159B00125705 /* Build configuration list for PBXNativeTarget "DCTKKGridViewDataSources" */;
+			buildPhases = (
+				24E2530B1592159B00125705 /* Sources */,
+				24E2530C1592159B00125705 /* Frameworks */,
+				24E2530D1592159B00125705 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCTKKGridViewDataSources;
+			productName = DCTKKGridViewDataSources;
+			productReference = 24E2530F1592159B00125705 /* libDCTKKGridViewDataSources.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		24E2531F1592159B00125705 /* DCTKKGridViewDataSourcesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24E253371592159B00125705 /* Build configuration list for PBXNativeTarget "DCTKKGridViewDataSourcesTests" */;
+			buildPhases = (
+				24E2531B1592159B00125705 /* Sources */,
+				24E2531C1592159B00125705 /* Frameworks */,
+				24E2531D1592159B00125705 /* Resources */,
+				24E2531E1592159B00125705 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24E253271592159B00125705 /* PBXTargetDependency */,
+			);
+			name = DCTKKGridViewDataSourcesTests;
+			productName = DCTKKGridViewDataSourcesTests;
+			productReference = 24E253201592159B00125705 /* DCTKKGridViewDataSourcesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24E253061592159B00125705 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Daniel Tull";
+			};
+			buildConfigurationList = 24E253091592159B00125705 /* Build configuration list for PBXProject "DCTKKGridViewDataSources" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 24E253041592159B00125705;
+			productRefGroup = 24E253101592159B00125705 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24E2530E1592159B00125705 /* DCTKKGridViewDataSources */,
+				24E2531F1592159B00125705 /* DCTKKGridViewDataSourcesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24E2531D1592159B00125705 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E2532E1592159B00125705 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24E2531E1592159B00125705 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24E2530B1592159B00125705 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E2534A1592166000125705 /* DCTArrayKKGridViewDataSource.m in Sources */,
+				24E2534B1592166000125705 /* DCTFetchedResultsKKGridViewDataSource.m in Sources */,
+				24E2534C1592166000125705 /* DCTKKGridViewCell.m in Sources */,
+				24E2534D1592166000125705 /* DCTKKGridViewDataSource.m in Sources */,
+				24E2534E1592166000125705 /* DCTObjectKKGridViewDataSource.m in Sources */,
+				24E2534F1592166000125705 /* DCTParentKKGridViewDataSource.m in Sources */,
+				24E253501592166000125705 /* DCTSplitKKGridViewDataSource.m in Sources */,
+				24E253511592166000125705 /* KKGridView+DCTKKGridViewDataSources.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24E2531B1592159B00125705 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E253311592159B00125705 /* DCTKKGridViewDataSourcesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24E253271592159B00125705 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24E2530E1592159B00125705 /* DCTKKGridViewDataSources */;
+			targetProxy = 24E253261592159B00125705 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24E2532C1592159B00125705 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24E2532D1592159B00125705 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24E253321592159B00125705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24E253331592159B00125705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24E253351592159B00125705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DCTKKGridViewDataSources.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		24E253361592159B00125705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/DCTKKGridViewDataSources.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		24E253381592159B00125705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCTKKGridViewDataSources/DCTKKGridViewDataSources-Prefix.pch";
+				INFOPLIST_FILE = "DCTKKGridViewDataSourcesTests/DCTKKGridViewDataSourcesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		24E253391592159B00125705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCTKKGridViewDataSources/DCTKKGridViewDataSources-Prefix.pch";
+				INFOPLIST_FILE = "DCTKKGridViewDataSourcesTests/DCTKKGridViewDataSourcesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24E253091592159B00125705 /* Build configuration list for PBXProject "DCTKKGridViewDataSources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E253321592159B00125705 /* Debug */,
+				24E253331592159B00125705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24E253341592159B00125705 /* Build configuration list for PBXNativeTarget "DCTKKGridViewDataSources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E253351592159B00125705 /* Debug */,
+				24E253361592159B00125705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		24E253371592159B00125705 /* Build configuration list for PBXNativeTarget "DCTKKGridViewDataSourcesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24E253381592159B00125705 /* Debug */,
+				24E253391592159B00125705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24E253061592159B00125705 /* Project object */;
+}
