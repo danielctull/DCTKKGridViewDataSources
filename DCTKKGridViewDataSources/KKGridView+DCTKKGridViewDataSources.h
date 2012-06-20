@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Daniel Tull Limited. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <KKGridView/KKGridView.h>
 @class DCTKKGridViewDataSource;
 

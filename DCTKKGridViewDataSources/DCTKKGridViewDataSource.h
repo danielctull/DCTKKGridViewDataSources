@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Daniel Tull Limited. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <KKGridView/KKGridView.h>
 
 @class DCTParentKKGridViewDataSource;
@@ -14,7 +15,7 @@
 
 @property (nonatomic, assign) Class cellClass;
 @property (nonatomic, strong) IBOutlet KKGridView *gridView;
-@property (nonatomic, dct_weak) DCTParentKKGridViewDataSource *parent;
+@property (nonatomic, assign) DCTParentKKGridViewDataSource *parent;
 
 /** A convinient way to repload the cells of the data source, this 
  should be overridden by subclasses to provide desired results.
