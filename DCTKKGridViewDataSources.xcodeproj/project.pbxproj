@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		24E253131592159B00125705 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E253121592159B00125705 /* Foundation.framework */; };
-		24E253181592159B00125705 /* DCTKKGridViewDataSources.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24E253171592159B00125705 /* DCTKKGridViewDataSources.h */; };
 		24E253221592159B00125705 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E253211592159B00125705 /* SenTestingKit.framework */; };
 		24E253251592159B00125705 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E253121592159B00125705 /* Foundation.framework */; };
 		24E253281592159B00125705 /* libDCTKKGridViewDataSources.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2530F1592159B00125705 /* libDCTKKGridViewDataSources.a */; };
@@ -23,6 +22,16 @@
 		24E253501592166000125705 /* DCTSplitKKGridViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E253471592166000125705 /* DCTSplitKKGridViewDataSource.m */; };
 		24E253511592166000125705 /* KKGridView+DCTKKGridViewDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E253491592166000125705 /* KKGridView+DCTKKGridViewDataSources.m */; };
 		24E253631592188D00125705 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E253621592188D00125705 /* UIKit.framework */; };
+		24E2537915921A1300125705 /* DCTKKGridViewDataSources.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E253171592159B00125705 /* DCTKKGridViewDataSources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24E2537A15921A1300125705 /* DCTArrayKKGridViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E2533A1592166000125705 /* DCTArrayKKGridViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24E2537C15921A1300125705 /* DCTFetchedResultsKKGridViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E2533C1592166000125705 /* DCTFetchedResultsKKGridViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24E2537E15921A1300125705 /* DCTKKGridViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E2533E1592166000125705 /* DCTKKGridViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24E2538015921A1300125705 /* DCTKKGridViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E253401592166000125705 /* DCTKKGridViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24E2538215921A1300125705 /* DCTObjectKKGridViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E253421592166000125705 /* DCTObjectKKGridViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24E2538415921A1300125705 /* DCTParentKKGridViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E253441592166000125705 /* DCTParentKKGridViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24E2538615921A1300125705 /* DCTSplitKKGridViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E253461592166000125705 /* DCTSplitKKGridViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24E2538815921A1300125705 /* KKGridView+DCTKKGridViewDataSources.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E253481592166000125705 /* KKGridView+DCTKKGridViewDataSources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24E2538A15921A4C00125705 /* libKKGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2535D1592179500125705 /* libKKGridView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,27 +49,7 @@
 			remoteGlobalIDString = 1A61BE0F13DCAF1F00AB4243;
 			remoteInfo = KKGridView;
 		};
-		24E253641592192400125705 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 24E253551592179500125705 /* KKGridView.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1A61BE0E13DCAF1F00AB4243;
-			remoteInfo = KKGridView;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		24E2530D1592159B00125705 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				24E253181592159B00125705 /* DCTKKGridViewDataSources.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		24E2530F1592159B00125705 /* libDCTKKGridViewDataSources.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCTKKGridViewDataSources.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E2538A15921A4C00125705 /* libKKGridView.a in Frameworks */,
 				24E253631592188D00125705 /* UIKit.framework in Frameworks */,
 				24E253131592159B00125705 /* Foundation.framework in Frameworks */,
 			);
@@ -198,6 +188,25 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		24E2537815921A0900125705 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24E2537915921A1300125705 /* DCTKKGridViewDataSources.h in Headers */,
+				24E2537A15921A1300125705 /* DCTArrayKKGridViewDataSource.h in Headers */,
+				24E2537C15921A1300125705 /* DCTFetchedResultsKKGridViewDataSource.h in Headers */,
+				24E2537E15921A1300125705 /* DCTKKGridViewCell.h in Headers */,
+				24E2538015921A1300125705 /* DCTKKGridViewDataSource.h in Headers */,
+				24E2538215921A1300125705 /* DCTObjectKKGridViewDataSource.h in Headers */,
+				24E2538415921A1300125705 /* DCTParentKKGridViewDataSource.h in Headers */,
+				24E2538615921A1300125705 /* DCTSplitKKGridViewDataSource.h in Headers */,
+				24E2538815921A1300125705 /* KKGridView+DCTKKGridViewDataSources.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		24E2530E1592159B00125705 /* DCTKKGridViewDataSources */ = {
 			isa = PBXNativeTarget;
@@ -205,12 +214,11 @@
 			buildPhases = (
 				24E2530B1592159B00125705 /* Sources */,
 				24E2530C1592159B00125705 /* Frameworks */,
-				24E2530D1592159B00125705 /* CopyFiles */,
+				24E2537815921A0900125705 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				24E253651592192400125705 /* PBXTargetDependency */,
 			);
 			name = DCTKKGridViewDataSources;
 			productName = DCTKKGridViewDataSources;
@@ -337,11 +345,6 @@
 			isa = PBXTargetDependency;
 			target = 24E2530E1592159B00125705 /* DCTKKGridViewDataSources */;
 			targetProxy = 24E253261592159B00125705 /* PBXContainerItemProxy */;
-		};
-		24E253651592192400125705 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KKGridView;
-			targetProxy = 24E253641592192400125705 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
