@@ -31,7 +31,6 @@
 		24E2538415921A1300125705 /* DCTParentKKGridViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E253441592166000125705 /* DCTParentKKGridViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24E2538615921A1300125705 /* DCTSplitKKGridViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E253461592166000125705 /* DCTSplitKKGridViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24E2538815921A1300125705 /* KKGridView+DCTKKGridViewDataSources.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E253481592166000125705 /* KKGridView+DCTKKGridViewDataSources.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24E2538A15921A4C00125705 /* libKKGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2535D1592179500125705 /* libKKGridView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,13 +40,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 24E2530E1592159B00125705;
 			remoteInfo = DCTKKGridViewDataSources;
-		};
-		24E2535C1592179500125705 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 24E253551592179500125705 /* KKGridView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1A61BE0F13DCAF1F00AB4243;
-			remoteInfo = KKGridView;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -77,7 +69,6 @@
 		24E253471592166000125705 /* DCTSplitKKGridViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTSplitKKGridViewDataSource.m; sourceTree = "<group>"; };
 		24E253481592166000125705 /* KKGridView+DCTKKGridViewDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KKGridView+DCTKKGridViewDataSources.h"; sourceTree = "<group>"; };
 		24E253491592166000125705 /* KKGridView+DCTKKGridViewDataSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KKGridView+DCTKKGridViewDataSources.m"; sourceTree = "<group>"; };
-		24E253551592179500125705 /* KKGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KKGridView.xcodeproj; path = KKGridView/KKGridView.xcodeproj; sourceTree = "<group>"; };
 		24E253621592188D00125705 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24E2538A15921A4C00125705 /* libKKGridView.a in Frameworks */,
 				24E253631592188D00125705 /* UIKit.framework in Frameworks */,
 				24E253131592159B00125705 /* Foundation.framework in Frameworks */,
 			);
@@ -112,7 +102,6 @@
 				24E253291592159B00125705 /* DCTKKGridViewDataSourcesTests */,
 				24E253111592159B00125705 /* Frameworks */,
 				24E253101592159B00125705 /* Products */,
-				24E253551592179500125705 /* KKGridView.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,14 +165,6 @@
 				24E2532C1592159B00125705 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		24E253561592179500125705 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				24E2535D1592179500125705 /* libKKGridView.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,12 +244,6 @@
 			mainGroup = 24E253041592159B00125705;
 			productRefGroup = 24E253101592159B00125705 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 24E253561592179500125705 /* Products */;
-					ProjectRef = 24E253551592179500125705 /* KKGridView.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				24E2530E1592159B00125705 /* DCTKKGridViewDataSources */,
@@ -276,16 +251,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		24E2535D1592179500125705 /* libKKGridView.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libKKGridView.a;
-			remoteRef = 24E2535C1592179500125705 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		24E2531D1592159B00125705 /* Resources */ = {
